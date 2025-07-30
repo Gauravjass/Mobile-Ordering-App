@@ -79,7 +79,7 @@ function getMenuItems(arrMenu){
     return arrMenu.map(item => 
                ` 
                     <section class="card">
-                        <img src="images/${item.image}" alt="an image of a pizza slice" />
+                        <img src="./images/${item.image}" alt="an image of a pizza slice" />
                         <div class="flex">
                         <div>
                         <h2>${item.name}</h2>
