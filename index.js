@@ -1,4 +1,4 @@
-import { v4 as uuidv4 } from 'uuid';
+
 import menuArray from './data'
 
 const container = document.getElementById('container');
