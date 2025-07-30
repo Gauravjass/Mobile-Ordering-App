@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Food Order Online</title>
+        <!-- font awesome cdn -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href='https://fonts.googleapis.com/css?family=Smythe' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <!-- CSS file link -->
+       <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="wrap">
+            <header>
+                <h1>Gaurav' Diner</h1>
+                <p>The best burgers and pizzas in the town.</p>
+            </header>
+            
+            <!-- list of food items -->
+            <main id="container"></main>
+            
+            <!-- order summary -->
+            <div id="show-message">
+                <section class="order-summery hide" id="summary">
+                    <h2>Your Order</h2>
+                    <div id="order"></div>
+                    <hr>
+                    <div class="flex total" id="total"></div>
+                    
+                    <button class="btn-complete" id="btn-complete" data-complete="summary">Complete Order</button>
+                </section>
+            </div>
+            
+            <!-- modal section -->
+           <div class="modal" id="modal">
+            <div class="modal-inner" id="modal-inner">
+                <h2>Enter Card Details</h2>
+                 <form id="payment">
+                    <input type = "text" placeholder="Enter you name" name="username" id="name" minlength="3" maxlength="16" pattern="^[a-zA-Z]+$" required>
+                    <input type = "text" placeholder="Enter Card Number" name="cardnumber" maxlength="12" pattern="^[0-9]{12}$"  required>
+                    <input type = "text" placeholder="Enter CVV" name="cvv"  pattern="^[0-9]{3}$" required>
+                    <button type="submit" class="btn-pay" data-pay="payment">Pay</button>
+            </form>
+            </div>
+           </div>
+        </div>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
