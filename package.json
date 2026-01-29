@@ -1,6 +1,6 @@
 {
-  "name": "Scrim-s02tj66",
-  "description": "https://scrimba.com/frontend-path-c0j/~0ie/s0cdq82c71/head",
+  "name": "food_ordering_app",
+  "description": "An app to order food online",
   "scripts": {
     "start": "vite",
     "dev": "vite",
